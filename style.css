@@ -144,6 +144,7 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-left: -1rem;
                 }
 
                     .numeromenu h4{
@@ -152,7 +153,7 @@ body{
 
     .restaurants{
         background-color: #f6f6f6;
-        padding: 2.5rem 0 0 1.5rem;
+        padding: 2rem 0 5rem 1.5rem;
     }
 
         .restaurants-cartes{
@@ -185,7 +186,7 @@ body{
                         border-radius: 1.2rem 1.2rem 0 0;
                     }
 
-                        .Nouveau{
+                    .Nouveau{
                             width: 6rem;
                             height: 2rem;
                             position: absolute;
@@ -196,21 +197,85 @@ body{
                             justify-content: center;
                             align-items: center;
                             border-radius: 0.1rem;
-                        }
+                    }
 
                             .Nouveau h4{
                                 color: #008766;
                             }
 
                 .restaurants-cartes_carte-titre{
+                    height: 28%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            
+
+                .restaurants-cartes_carte-titre_nom{
+                    height: 70%;
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     margin-left: 1rem;
                 }
+
+                .restaurants-cartes_carte-titre_nom h4, .restaurants-cartes_carte-titre_nom p{
+                    margin: 0.1rem;
+                }
+
+                    fa-solidfa-heart:hover, fa-solidfa-heart:active{
+                        background:linear-gradient(#9356DC, #ed73da);
+                    }
+                    
 
 
 
     footer{
         background-color: #353535;
+        width: 100%;
+        height: 13rem;
+        color: white;
+        padding: 2rem 0 0 2rem;
     }
 
+        .logofooter{
+            color: white;
+            width: 8rem;
+            height: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .footer_participer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 16%;
+            margin: 0;
+        }
+
+            .fa-solidfa-utensils, .fa-solidfa-handshake-angle{
+                color: white;
+                width: 1rem;
+                height: 1rem;
+            }
+
+        footer p{
+            margin: 0.3rem 0 0.5rem 0;
+        }
+
+
+
+/*------------------------------- ----------------------------------*/
+
+
+.menu{
+    background-color: #f6f6f6;
+    border-radius: 3rem 3rem 0 0;
+    margin-top: -3rem;
+    padding: 2rem 1.5rem 6.5rem 1.5rem;
+    width: 100%;
+}
+
+    
