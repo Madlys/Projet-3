@@ -39,7 +39,7 @@ h4{
     font-size: 1.3rem;
 }
 
-p{
+p, h5{
     font-family: "Roboto-Light";
     font-size: 1.3rem;
 }
@@ -57,6 +57,7 @@ a/*tous les liens cliquables de la page*/
 body{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -65,6 +66,7 @@ body{
         justify-content: center;
         align-items: center;
         height: 3.8rem;
+        width: 100%;
     }
 
         .logoheader{
@@ -270,12 +272,55 @@ body{
 /*------------------------------- ----------------------------------*/
 
 
-.menu{
-    background-color: #f6f6f6;
-    border-radius: 3rem 3rem 0 0;
-    margin-top: -3rem;
-    padding: 2rem 1.5rem 6.5rem 1.5rem;
-    width: 100%;
+.fa-solidfa-arrow-left{
+    margin: -3rem;/*margin:-?rem; pour décaler flèche à gauche*/
 }
 
+
+.menu{
+    background-color: #f6f6f6;
+    border-radius: 2.5rem 2.5rem 0 0;
+    margin-top: -3rem;
+    padding: 1rem 0 6.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .menu-titre{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 3rem;
+        width: 88%;
+    }
+
+    .menu-etape{
+        width: 95%;
+    }
     
+        h5{
+            margin-left: 1rem;
+            border-bottom: 0.2rem solid #99e2d0;
+            width: 3.5rem;
+            line-height: 2rem;
+        }
+
+        .menu-etape_plats{
+
+        }
+
+            .menu-etape_plats-plat{
+                background-color: white;
+                border-radius: 1.2rem;
+                box-shadow: 0 5px 12px rgb(199, 199, 199);
+                height: 5rem;
+            }
+
+                .menu-etape_plats-plat-nom{
+                    background-color: #008766;
+                    height: 3rem;
+                    margin: 0.5rem 0 0.2rem 0.2rem;
+                }
